@@ -4,7 +4,7 @@
     <meta charset="UTF=8" />
     <title>Portfolio</title>
     <link rel="resetsheet" href="reset.css" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="./css/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap"
@@ -13,84 +13,131 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header>
-      <div class="order-container">
-        <div class="order-header">
-          <p>Matthew St. Onge</p>
-          <p></p>
-        </div>
+      <div class="brand">
+        <h1 class="brand__title">Matthew St. Onge</h1>
       </div>
 
       <nav>
-          <ul>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <h1 class="banner">
-      <div class="subtitle-container">Cool Subtitle Here!</div>
-    </h1>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Resume</a></li>
+        </ul>
+      </nav>
 
-    <div class="section">
-      <h2 class="left-section">
-        About <br />
-        Me
-      </h2>
-      <div class="section-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex arcu,
-        bibendum id nulla quis, luctus interdum massa. Ut non metus a orci
-        ullamcorper porttitor. Nullam sit amet dolor id quam maximus mollis eget
-        at augue. Nulla fermentum quis enim eget sodales. In at interdum tellus.
-        Donec facilisis, mi scelerisque egestas feugiat, nibh libero egestas
-        tortor, vehicula sagittis mauris ipsum eget sapien. Aenean mollis est
-        dapibus dui egestas, vel iaculis nulla venenatis. Nulla auctor blandit
-        est eu dictum. Sed imperdiet nunc quis nisl eleifend, non scelerisque
-        dui dictum. Phasellus pretium, nibh et sodales dignissim, nisl sapien
-        bibendum lorem, quis efficitur quam metus ut erat. Quisque luctus ut
-        arcu a tempor. Phasellus libero ante, dictum ut ornare et, dapibus eu
-        purus. Nulla facilisi.
+      <div class="banner">
+        <h2 class="banner__title">The beautiful South West</h2>
       </div>
-    </div>
+    </header>
+    <!-- Header END -->
 
-    <div class="section">
-      <h3 class="left-section">Work</h3>
-      <div class="section-content">
-        <div class="box-wrapper">
-          <div class="box box-full" id="box1">
-            <div class="box-title">
-              <h3>First Img</h3>
+    <!-- Sections -->
+    <div class="sections">
+
+      <!-- About -->
+      <section class="section">
+        <h3 class="section__title">About</h3>
+
+        <div class="section__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ex
+          arcu, bibendum id nulla quis, luctus interdum massa. Ut non metus a
+          orci ullamcorper porttitor. Nullam sit amet dolor id quam maximus
+          mollis eget at augue. Nulla fermentum quis enim eget sodales. In at
+          interdum tellus. Donec facilisis, mi scelerisque egestas feugiat, nibh
+          libero egestas tortor, vehicula sagittis mauris ipsum eget sapien.
+          Aenean mollis est dapibus dui egestas, vel iaculis nulla venenatis.
+          Nulla auctor blandit est eu dictum. Sed imperdiet nunc quis nisl
+          eleifend, non scelerisque dui dictum. Phasellus pretium, nibh et
+          sodales dignissim, nisl sapien bibendum lorem, quis efficitur quam
+          metus ut erat. Quisque luctus ut arcu a tempor. Phasellus libero ante,
+          dictum ut ornare et, dapibus eu purus. Nulla facilisi.
+        </div>
+      </section> <!-- About END -->
+
+      <!-- Work -->
+      <section class="section">
+        <h3 class="section__title">Work</h3>
+        
+        <!-- Image boxes -->
+        <div class="section__content">
+          <!-- Box 1 -->
+          <div id="box-1" class="image-box image-box-wide">
+            <div class="image-box-inner">
+              <h4 class="image-box__title">Grand Canyon<br>National Park</h4>
+              <div class="image-box__content">
+                <!-- Box 1 Content -->
+              </div>  
             </div>
-            box 1
           </div>
 
-          <div class="box" id="box2">box 2</div>
+           <!-- Box 2 -->
+           <div id="box-2" class="image-box">
+            <div class="image-box-inner">
+              <h4 class="image-box__title">Arches<br>National<br> Park</h4>
+              <div class="image-box__content">
+                <!-- Box 2 Content -->
+              </div>  
+            </div>
+           </div>
 
-          <div class="box" id="box3">box 3</div>
+            <!-- Box 3 -->
+           <div id="box-3" class="image-box">
+            <div class="image-box-inner">
+              <h4 class="image-box__title">Sedona<br>National<br>Forest</h4>
+              <div class="image-box__content">
+                <!-- Box 3 Content -->
+              </div>  
+            </div>
+          </div>
 
-          <div class="box" id="box4">box 4</div>
+            <!-- Box 4 -->
+           <div id="box-4" class="image-box">
+            <div class="image-box-inner">
+              <h4 class="image-box__title">Zion<br>National<br>Park</h4>
+              <div class="image-box__content">
+                <!-- Box 4 Content -->
+              </div>  
+            </div>
+          </div>
 
-          <div class="box" id="box5">box 5</div>
+            <!-- Box 5 -->
+           <div id="box-5" class="image-box">
+            <div class="image-box-inner">
+              <h4 class="image-box__title">New Mexico<br>Balloon<br>Fiesta</h4>
+              <div class="image-box__content">
+                <!-- Box 5 Content -->
+              </div>  
+            </div>
+          </div>
+
+          </div>
         </div>
-      </div>
-    </div>
+      </section> <!-- Work END -->
 
-    <div class="section">
-      <h4 class="left-section">
-        Contact <br />
-        Me
-      </h4>
-      <div class="section-content">
-        <ul>
-          <li><a href="#">602-903-0860</a></li>
-          <li><a href="#">StOnge.Ms@Gmail.com</a></li>
-          <li><a href="https://github.com/stongems">Github/StOngeMs</a></li>
-          <li><a href="#">Resume</a></li>
-        </ul>
-      </div>
-    </div>
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <h3 class="section__title">
+          Contact
+        </h3>
+
+        <div class="section__content">
+          <nav> 
+          <ul class="contact">
+            <li><a href="#">602-903-0860</a></li>
+            <li><a href="#">StOnge.Ms@Gmail.com</a></li>
+            <li><a href="https://github.com/stongems">Github/StOngeMs</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+          </nav>
+        </div>
+      </section> <!-- Contact END -->
+
+    </div> <!-- Sections END -->
+
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

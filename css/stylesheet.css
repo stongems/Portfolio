@@ -1,0 +1,231 @@
+:root {
+  --theme-bg: #fefefe;
+  --theme-primary: #a9dbde;
+  /* --theme-secondary: rgb(255, 136, 0); */
+  --theme-on-light: black;
+  --theme-on-dark: #fefefe;
+  --theme-text: "Nunito", sans-serif;
+}
+
+body {
+  line-height: normal;
+  font-size: 18px;
+  margin: 0; 
+  padding: 0; 
+  background-color: var(--theme-bg);
+}
+
+button {
+  color: var(--theme-on-light);
+  background-color: var(--theme-primary);
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-weight: bold;
+}
+button:hover {
+  background-color: var(--theme-secondary);
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0%;
+  margin: 0%;
+  height: 250px; 
+  background-color: var(--theme-on-light);
+  background: url(https://cdn.pixabay.com/photo/2016/07/30/19/47/banner-1557834_960_720.jpg)
+    bottom center; 
+  background-size: 100% 100%;
+  color: darkgray;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 80px;
+}
+
+nav ul a {
+  display: block;
+  color: cornsilk;
+  font-family: var(--theme-text);
+  text-decoration-line: none;
+  border-bottom: 2px solid white;
+  padding: 0 6px 0 6px;
+}
+
+/* Hover effect */
+nav ul a:hover {
+  color: var(--theme-primary);
+  border-color: var(--theme-primary);
+}
+
+nav li {
+  padding-right: 30px;
+}
+
+.brand {
+  background-color: var(--theme-primary);
+  position: relative;
+  top: 20px;
+}
+
+.brand__title {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--theme-text);
+  font-size: 30px;
+  color: var(--theme-on-light);
+}
+
+.banner {
+  position: absolute;
+  background-color: var(--theme-primary);
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  width: auto;
+}
+
+.banner__title {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--theme-text);
+  font-size: 30px;
+  color: var(--theme-on-light);
+}
+
+section,
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  font-family: var(--theme-text);
+}
+
+.section__title {
+  color: blue;
+  font-family: var(--theme-text);
+  font-size: 30px;
+  text-align: right;
+  border-right: 2px solid blue;
+  padding: 5px;
+  padding-right: 10px;
+  flex-basis: 25%;
+}
+
+.section__content {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px;
+}
+
+/* Boxes */
+.image-box {
+  display: flex;
+  min-height: 200px;
+  width: 48%;
+  margin: 1%;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.image-box-wide {
+  width: 100%;
+}
+
+.image-box-inner {
+  display: flex;
+  position: relative;
+  border: 5px solid var(--theme-primary);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s; 
+  /* transition was added to make a smooth hover change */
+  /* transition for hover must be in the parent element */
+}
+.image-box-inner:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.image-box__title {
+  position: absolute;
+  left: -1px; 
+  bottom: 10px;
+  background-color: var(--theme-primary);
+  margin: 0;
+  padding: 0.3rem;
+}
+
+.image-box__content {
+  padding: 1rem;
+  color: var(--theme-primary);
+}
+
+#box-1 {
+  background: url(https://cdn.pixabay.com/photo/2015/07/02/10/27/grand-canyon-828762_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#box-2 {
+  background: url(https://cdn.pixabay.com/photo/2016/09/19/22/10/nature-1681444_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#box-3 {
+  background: url(https://cdn.pixabay.com/photo/2017/11/29/18/06/lizard-2986748_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#box-4 {
+  background: url(https://cdn.pixabay.com/photo/2019/12/27/21/23/zion-4723450_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#box-5 {
+  background: url(https://cdn.pixabay.com/photo/2016/10/16/22/36/balloon-fiesta-1746495_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}/* Boxes END */
+
+ul.contact {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 60px;
+}
+
+ul.contact a {
+  display: block;
+  color: var(--theme-on-light);
+  font-family: "Nunito", sans-serif;
+  text-decoration-line: none;
+  border-bottom: 2px solid blue;
+  padding: 0 6px 0 6px;
+  transition: ease-in-out 0.2s;
+  /* transition was added to make a smooth hover change */
+  /* transition for hover must be in the parent element */
+}
+
+ul.contact li {
+  padding-right: 30px;
+}
+
+ul.contact li a:hover {
+  color: rgb(94, 23, 153);
+  border-color: rgb(94, 23, 153);
+  font-size: 1.15rem;
+  /* hover color, border, font-size all stay with the child */
+}
+
