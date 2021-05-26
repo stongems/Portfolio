@@ -117,6 +117,7 @@ section,
   padding: 5px;
   padding-right: 10px;
   flex-basis: 25%;
+  min-width: 121px;
 }
 
 .section__content {
@@ -229,3 +230,15 @@ ul.contact li a:hover {
   /* hover color, border, font-size all stay with the child */
 }
 
+ @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} 
